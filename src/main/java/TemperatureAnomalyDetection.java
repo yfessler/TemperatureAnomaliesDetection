@@ -34,7 +34,7 @@ public class TemperatureAnomalyDetection {
         DataStream<String> dataStream = getDevicesStreams(env, params);
 
         int windowSizeInSeconds = defaultWindowSizeInSeconds;
-        if (params.has("measurementsPerMinute")) {
+        if (params.has("windowSize")) {
             windowSizeInSeconds = Integer.parseInt(params.get("windowSize"));
         }
 
