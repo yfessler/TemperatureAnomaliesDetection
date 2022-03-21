@@ -11,12 +11,12 @@ Anomaly is defined if a measurement is 3 standard deviations away from the 1-min
 2. build the project as jar artifact 
 3. execute the job as follows:
    at the flink folder:
-   bin/flink run -c TemperatureAnomalyDetection TemperatureAnomalyDetection.jar 
-   optional params:
-   Number of Devices (default: 200): --numOfDevices 100
-   Measurements per minute (default: 100): --measurementsPerMinute 100
-   Window Size in seconds (default 60): --windowSize 60
+   bin/flink run -c TemperatureAnomalyDetection TemperatureAnomalyDetection.jar    
+   Optional parameters:    
+   - Number of Devices (default: 200): --numOfDevices 100   
+   - Measurements per minute (default: 100): --measurementsPerMinute 100    
+   - Window Size in seconds (default 60): --windowSize 60
    
-   for the out put type the follow command in a different terminal:
+   For the job output type the follow command in a different terminal:
    tail -f log/flink-*-jobmanager-*.out
    
