@@ -1,10 +1,10 @@
 # Temperature Anomalies Detection
-Flink example for Temperature Anomalies Detection simulation 
+Flink example for Temperature Anomalies Detection simulation
 
-This example detect anomalies in the temperature measurements of an imaginary IOT devices (Steam is simulate by an endless data source)
-The filnk job get the temprature measurement of a device which generates 100 temperature measurements in 1 minute (can be overriden by command line)
+This example detects anomalies in the temperature measurements of imaginary IOT devices (Steam is simulated by an endless data source)
+The Filnk job get the temperature measurement of a device which generates 100 temperature measurements in 1 minute (can be overridden by command line)
 
-Anomaly is defined if a measurement is 3 standard deviations away from the 1 minute average.
+Anomaly is defined if a measurement is 3 standard deviations away from the 1-minute average.
 
 ## How to execute:
 1. install Flink
